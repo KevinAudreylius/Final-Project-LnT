@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    opacity: 0.85;
+}
+
+.navbar-nav{
+    width: 40%;
+    margin-left: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    font-family: 'sigmar';
+    transition: 300ms;
+}
+
+.navbar-brand:hover{
+    opacity: 0.7;
+}
+
+.content{
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.content h1{
+    color: whitesmoke;
+    font-family: 'sigmar';
+    font-size: 70px;
+    transition: 500ms ease-in-out;
+}
+
+.content h1:hover{
+    color: aqua;
+}
+
+.video-bg{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.robot2{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.content button{
+    border-radius: 30px;
+    text-decoration: none;
+    /* position: absolute; */
+    font-size: 16px;
+    font-family: 'poppins';
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    transition: 500ms ease-in-out;
+}
+
+.about-info{
+    position: absolute;
+    top: 100vh;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+}
+.content button:hover{
+    border-color: aqua;
+    color: aqua;
+}
+.about-info p{
+    padding-left: 10%;
+    padding-right: 40%;
+    font-family: 'poppins';
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.about-info h1{
+    width: 70%;
+    font-weight: bolder;
+    padding: 100px;
+    padding-left: 10%;
+    font-size: 50px;
+    font-family: 'sigmar';
+    color: rgb(255, 255, 255);
+    transition: 300ms;
+}
+
+.about-info h1:hover{
+    color: aqua;
+    cursor: context-menu;
+}
+
+.about-img{
+    top: 100vh;
+   width: 30%;
+   height: 100vh;
+   position: absolute;
+   right: 0;
+   background-image: url(./robot.png) ;
+}
+
+.slide-container1{
+    max-width: 1120px;
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 40px 0;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+    
+}
+ 
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: white;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before, .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+}
+.overlay::after{
+     border-radius:  0 25px 0 0;
+     background-color: white;
+}
+
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.desc{
+    font-size: 14px;
+    color: grey;
+    text-align: center;
+}
+
+.button{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: grey;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    background: rgb(78, 78, 78);
+}
+
+.regis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.regis h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.regis h2{
+    color: white;
+}
+
+.regis button{
+    border-radius: 30px;
+    padding: 10px 20px;
+    
+    background-color: rgb(255, 253, 227);
+    border-color: rgb(248, 255, 184);
+    transition: 300ms ease-in-out;
+}
+
+.regis button:hover{
+    font-weight: bold;
+    background-color: rgb(255, 249, 79);
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: rgb(206, 229, 255);
+}
+.formhead h1{
+    font-family: 'sigmar';
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.back a{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+}
+
+.back a:hover{
+    color: red;
+}
+
+#errormessage1{
+    font-size: 16px;
+}
+
+#errormessage2{
+    font-size: 16px;
+}
+
+#errormessage3{
+    font-size: 16px;
+}
+
+.robot3{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
